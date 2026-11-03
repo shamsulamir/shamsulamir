@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitHub Finder</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 24px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    input {
+      width: 70%;
+      padding: 10px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      color: #fff;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 26%;
+      padding: 10px;
+      background: #238636;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #2ea043; }
+    #result { margin-top: 20px; text-align: center; }
+    img.avatar { width: 90px; height: 90px; border-radius: 50%; border: 2px solid #58a6ff; }
+    .stats { display: flex; justify-content: space-around; margin: 15px 0; font-size: 14px; }
+    a.profile-link { color: #58a6ff; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2 style="margin-top:0; color:#fff;">GitHub Finder</h2>
+    <div style="display:flex; justify-content:space-between;">
+      <input type="text" id="username" placeholder="e.g. torvalds" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
